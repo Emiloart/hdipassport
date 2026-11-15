@@ -7,9 +7,10 @@ metadataBase:new URL("https://hdipassport.com"),
 title:{default:"HDIP | Identity infrastructure built around the person",template:"%s | HDIP"},
 description:"A hybrid decentralized identity passport and trust infrastructure platform. One identity, reusable credentials and purpose-bound verification.",
 applicationName:"HDIP",authors:[{name:"Emiloart",url:"https://github.com/Emiloart"}],creator:"Emiloart",publisher:"Emiloart",
+icons:{icon:"/icon.svg",shortcut:"/icon.svg",apple:"/icon.svg"},
 openGraph:{type:"website",siteName:"HDIP",title:"HDIP | Identity infrastructure built around the person",description:"One identity. Reusable credentials. Purpose-bound verification.",url:"https://hdipassport.com"},
 twitter:{card:"summary_large_image",title:"HDIP | Identity infrastructure built around the person",description:"One identity. Reusable credentials. Purpose-bound verification."},
 robots:{index:true,follow:true}
 };
-export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:"#071a24",colorScheme:"light"};
+export const viewport:Viewport={width:"device-width",initialScale:1,themeColor:"#ffffff",colorScheme:"light"};
 export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><a className="skip-link" href="#main-content">Skip to content</a><SiteHeader/><main id="main-content">{children}</main><SiteFooter/></body></html>}
