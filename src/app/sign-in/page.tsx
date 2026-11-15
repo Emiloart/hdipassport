@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowUpRight,Fingerprint } from "lucide-react";
+export const metadata={title:"Sign in",description:"Access your HDIP account."};
+export default function SignInPage(){return <div className="gateway-page"><div className="signin-panel"><div className="signin-mark"><Fingerprint size={30}/></div><span className="eyebrow">HDIP account access</span><h1>Welcome<br/><span>back.</span></h1><p>Continue to the HDIP account experience. Choose the environment that matches your role.</p><div className="signin-actions"><Link href="/product/wallet" className="button button-large">Individual account <ArrowUpRight size={16}/></Link><Link href="/developers" className="button button-outline button-large">Organization & developer access <ArrowUpRight size={16}/></Link></div><Link href="/get-started" className="signin-back">New to HDIP? Get started</Link></div></div>}
