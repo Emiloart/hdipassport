@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import desktopHero from "@/assets/hdipassport_hero.png";
 import portraitHero from "@/assets/hdipassport_portrait_hero.png";
-import { ArrowDownRight,BadgeCheck,Building2,Fingerprint,Globe2,LockKeyhole,Network,ScanFace,ShieldCheck,UserRound,WalletCards } from "lucide-react";
+import { ArrowDownRight,ArrowRight,BadgeCheck,Building2,Fingerprint,Globe2,LockKeyhole,Network,ScanFace,ShieldCheck,UserRound,WalletCards } from "lucide-react";
 
 const cases=[["Financial services","Customer onboarding and account verification"],["Education","Academic qualifications and enrollment"],["Employment","Professional identity and licenses"],["Travel","Identity checks across services and borders"],["Healthcare","Relevant identity and eligibility claims"],["Digital services","Age and eligibility with less disclosure"]];
 export default function HomePage(){return <>
