@@ -286,3 +286,105 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
   .hero-details{padding-top:16px}
   .hero-proof{margin-top:15px;gap:8px}
 }
+
+
+/* Refined mobile hero and compact sticky navigation */
+@media(max-width:850px){
+  .site-header{
+    height:64px;
+    transition:height .22s ease,background-color .22s ease,box-shadow .22s ease;
+  }
+  .site-header.is-scrolled{
+    height:54px;
+    background:rgba(249,251,250,.97);
+    box-shadow:0 5px 18px rgba(7,26,36,.08);
+  }
+  .header-inner{padding-left:5%;padding-right:5%;gap:14px}
+  .brand{gap:8px}
+  .brand-mark{width:40px;height:31px;transition:width .22s ease,height .22s ease}
+  .brand-word{font-size:21px;letter-spacing:-.075em}
+  .is-scrolled .brand-mark{width:36px;height:28px}
+  .is-scrolled .brand-word{font-size:19px}
+  .mobile-menu>summary{
+    width:40px;height:40px;
+    border-radius:8px;
+    background:#071a24;
+    color:#f5faf8;
+    transition:width .22s ease,height .22s ease,background .22s ease;
+  }
+  .is-scrolled .mobile-menu>summary{width:36px;height:36px;background:#071a24;color:#fff}
+  .mobile-menu>summary svg{stroke-width:2}
+  .mobile-panel{top:calc(100% + 7px);right:0;border-radius:0 0 12px 12px}
+  .hero-section{
+    min-height:790px;
+    min-height:max(760px,calc(100svh - 64px));
+  }
+  .hero-grid{
+    min-height:inherit;
+    padding:30px 7% 30px;
+    align-items:stretch;
+  }
+  .hero-copy{
+    width:100%;
+    max-width:none;
+    min-height:calc(max(760px,100svh - 64px) - 60px);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  .hero-title-block{position:relative;z-index:2}
+  .hero-kicker{display:none}
+  .hero-copy h1{
+    max-width:100%;
+    margin:0;
+    font-family:var(--serif);
+    font-size:clamp(35px,8.7vw,45px);
+    line-height:1.02;
+    font-weight:400;
+    letter-spacing:-.052em;
+    text-wrap:balance;
+  }
+  .hero-copy h1 .hero-heading-primary,
+  .hero-copy h1 .hero-heading-secondary{
+    display:block;
+    color:#fff;
+  }
+  .hero-copy h1 .hero-heading-secondary{margin-top:2px}
+  .hero-background .hero-image{
+    transform:scale(1.13);
+    transform-origin:50% 48%;
+    object-position:center 50%;
+  }
+  .hero-details{
+    position:relative;
+    z-index:2;
+    width:100%;
+    max-width:440px;
+    margin-top:auto;
+    padding-top:20px;
+  }
+  .hero-lede{
+    max-width:400px;
+    margin:0;
+    color:#f0f5f2;
+    font-size:13px;
+    line-height:1.55;
+    text-shadow:0 2px 12px rgba(0,0,0,.72);
+  }
+  .hero-actions{margin-top:15px;gap:12px}
+  .hero-actions .hero-primary-cta{
+    min-height:44px;
+    padding:0 21px;
+    border-radius:7px;
+  }
+  .hero-proof{margin-top:16px;padding-top:12px;gap:8px}
+  .hero-proof span{font-size:9px;color:#f1f6f3;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+  .hero-bottom{display:none}
+}
+@media(max-width:380px){
+  .hero-section{min-height:max(730px,calc(100svh - 64px))}
+  .hero-copy{min-height:calc(max(730px,100svh - 64px) - 60px)}
+  .hero-grid{padding-top:26px;padding-bottom:25px}
+  .hero-copy h1{font-size:34px}
+  .hero-background .hero-image{transform:scale(1.16);transform-origin:50% 48%}
+}
