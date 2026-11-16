@@ -62,3 +62,16 @@
 @media(max-width:600px){
   .hero-grid{padding:58px 7% 95px}
 }
+
+
+/* Viewport containment: prevent mobile navigation and decorative elements from widening the page. */
+html,body{width:100%;max-width:100%;overflow-x:clip}
+.site-header,.header-inner,.hero-section,.section,.site-footer{max-width:100%}
+.mobile-menu,.mobile-panel{min-width:0}
+.mobile-panel{right:0;width:min(410px,calc(100vw - 32px))}
+.tag-three{right:0}
+@media(max-width:600px){
+  .content-hero-mark{right:0}
+  .hero-grid,.hero-bottom,.section,.architecture-section,.closing-cta,.site-footer{min-width:0}
+  .hero-copy,.hero-copy h1,.hero-lede{min-width:0;overflow-wrap:anywhere}
+}
