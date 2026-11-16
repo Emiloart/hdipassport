@@ -570,3 +570,89 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
   .section-link-wrap .text-link,
   .privacy-copy > .text-link{min-height:44px}
 }
+
+
+/* Hero-matched CTA styling: preserve the hero reference and align every other CTA. */
+.button:not(.hero-primary-cta),
+.next-link,
+.section-link-wrap .text-link,
+.privacy-copy > .text-link,
+.closing-actions .text-link,
+.mega-all{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:50px;
+  padding:16px 21px;
+  border:1px solid var(--teal);
+  border-radius:7px;
+  background:var(--teal);
+  color:#fff;
+  font-size:13px;
+  font-weight:700;
+  line-height:1.2;
+  transition:transform .2s,background .2s,box-shadow .2s;
+}
+.button:not(.hero-primary-cta):hover,
+.next-link:hover,
+.section-link-wrap .text-link:hover,
+.privacy-copy > .text-link:hover,
+.closing-actions .text-link:hover,
+.mega-all:hover{
+  transform:translateY(-2px);
+  border-color:var(--teal-dark);
+  background:var(--teal-dark);
+  color:#fff;
+  box-shadow:0 8px 22px rgba(12,127,120,.18);
+}
+.button:not(.hero-primary-cta).button-small{
+  min-height:50px;
+  padding:16px 21px;
+  font-size:13px;
+}
+.button:not(.hero-primary-cta).button-light,
+.button:not(.hero-primary-cta).button-outline{
+  border-color:var(--teal);
+  background:var(--teal);
+  color:#fff;
+}
+.button:not(.hero-primary-cta).button-light:hover,
+.button:not(.hero-primary-cta).button-outline:hover{
+  border-color:var(--teal-dark);
+  background:var(--teal-dark);
+  color:#fff;
+}
+.next-link{min-width:180px;justify-content:center}
+.next-link svg{display:none}
+.mega-all{margin-top:16px}
+.section-link-wrap .text-link svg,
+.privacy-copy > .text-link svg,
+.closing-actions .text-link svg,
+.mega-all svg{transition:none}
+.section-link-wrap .text-link:hover svg,
+.privacy-copy > .text-link:hover svg,
+.closing-actions .text-link:hover svg,
+.mega-all:hover svg{transform:none}
+@media(max-width:850px){
+  .button:not(.hero-primary-cta),
+  .next-link,
+  .section-link-wrap .text-link,
+  .privacy-copy > .text-link,
+  .closing-actions .text-link,
+  .mega-all{min-height:48px}
+}
+@media(max-width:600px){
+  .button:not(.hero-primary-cta),
+  .next-link,
+  .section-link-wrap .text-link,
+  .privacy-copy > .text-link,
+  .closing-actions .text-link,
+  .mega-all{
+    min-height:44px;
+    padding:0 21px;
+  }
+  .button:not(.hero-primary-cta).button-small{min-height:44px;padding:0 21px}
+  .button:not(.hero-primary-cta).button-large{min-height:44px;padding:0 21px}
+  .next-link{min-width:0;flex:1 1 145px}
+}
