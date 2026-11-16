@@ -481,3 +481,66 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
  .ecosystem-branches small{font-size:7px}
  .closing-cta{padding-top:52px;padding-bottom:52px}
 }
+
+
+/* Site-wide body refinement: compact content rows and smaller choice cards. */
+.content-principles{padding-top:12px}
+.content-principle{
+  grid-template-columns:minmax(0,1fr);
+  gap:0;
+  padding:21px 2px;
+}
+.content-principle h2{margin-bottom:6px;font-size:21px}
+.content-principle p{font-size:12px;line-height:1.72}
+.content-principle-number,.content-principle>svg{display:none}
+.content-next{margin-top:42px}
+.content-next>div{gap:9px;margin-top:14px}
+.next-link{
+  min-width:180px;
+  padding:12px 14px;
+  border-radius:6px;
+  font-size:10px;
+}
+.next-link svg{display:none}
+.content-callout{padding:44px 7.2%;gap:22px}
+.content-callout .button{min-height:43px;padding:0 19px}
+.gateway-options{gap:12px;margin-top:38px}
+.gateway-card{
+  min-height:0;
+  padding:19px;
+  border-radius:8px;
+}
+.gateway-card>svg{width:21px;height:21px}
+.gateway-label{margin-top:18px;font-size:8px}
+.gateway-card h2{margin:7px 0;font-size:21px}
+.gateway-card p{font-size:10px;line-height:1.62}
+.gateway-arrow{display:none}
+.gateway-footnote{margin-top:24px}
+@media(max-width:850px){
+  .content-principle{padding:18px 1px}
+  .content-callout{padding:38px 6%;gap:18px}
+  .gateway-options{gap:10px;margin-top:30px}
+  .gateway-card{padding:16px}
+  .gateway-card h2{font-size:19px}
+}
+@media(max-width:600px){
+  .content-principle{padding:16px 0}
+  .content-principle h2{font-size:19px}
+  .content-principle p{font-size:11px;line-height:1.68}
+  .content-next{margin-top:32px}
+  .next-link{min-width:0;flex:1 1 145px;padding:11px 12px}
+  .content-callout{
+    display:flex;flex-direction:column;
+    align-items:flex-start;
+    padding:34px 7%;
+    gap:18px;
+  }
+  .content-callout h2{font-size:30px}
+  .gateway-options{grid-template-columns:1fr;gap:10px;margin-top:26px}
+  .gateway-card{padding:17px;display:grid;grid-template-columns:24px 1fr;column-gap:12px;align-items:start}
+  .gateway-card>svg{grid-column:1;grid-row:1 / span 2}
+  .gateway-label{grid-column:2;margin:0}
+  .gateway-card h2{grid-column:2;margin:3px 0;font-size:19px}
+  .gateway-card p{grid-column:2;margin:2px 0 0;max-width:none}
+  .gateway-footnote{margin-top:20px}
+}
