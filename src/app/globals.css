@@ -1067,3 +1067,10 @@ a.next-link svg{display:none}
   .button:not(.hero-primary-cta).button-large{min-height:44px;padding:0 21px}
   a.next-link{min-width:0;flex:1 1 145px}
 }
+
+/* Resolve the higher-specificity legacy CTA selectors without touching the hero. */
+.section-link-wrap > a.text-link,
+.privacy-copy > a.text-link,
+.closing-actions > a.text-link {
+  border-radius: 999px;
+}
