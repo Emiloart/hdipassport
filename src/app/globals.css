@@ -410,3 +410,74 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 @media(prefers-reduced-motion:reduce){
   .ecosystem-branches>div{transition:none}
 }
+
+
+/* Homepage card density: reduce padding and excess vertical footprint. */
+.problem-grid{gap:16px;margin-top:46px}
+.problem-item{padding:18px 19px 20px;border-radius:9px}
+.problem-icon{width:40px;height:40px;border-radius:8px}
+.problem-item h3{margin:15px 0 6px;font-size:15px}
+.problem-item p{font-size:11px;line-height:1.68}
+.problem-rule{left:19px;right:19px}
+.steps{gap:13px;margin-top:38px}
+.step{padding:16px 15px}
+.step-icon{width:40px;height:40px;border-radius:8px}
+.step h3{margin:13px 0 6px;font-size:14px}
+.step p{font-size:10px;line-height:1.7}
+.architecture-stack{padding:15px}
+.architecture-layer{min-height:54px;padding:8px 12px}
+.architecture-layer+.architecture-layer{margin-top:6px}
+.architecture-layer small{margin-top:3px}
+.principle-list{gap:13px}
+.principle-list>div{gap:10px}
+.standard-item{min-height:64px;padding:10px 12px;gap:11px}
+.standard-mark{width:37px;height:37px;border-radius:7px}
+.standard-item b{font-size:10px}
+.standard-item small{font-size:8px;line-height:1.45}
+.usecase-grid{margin-top:42px;column-gap:28px}
+.usecase-item{min-height:65px;gap:12px}
+.usecase-item b{font-size:12px}
+.usecase-item small{font-size:9px}
+.ecosystem-map{margin-top:46px;padding:30px 24px 24px}
+.ecosystem-center{padding:16px;width:210px}
+.ecosystem-branches{gap:10px;margin-top:38px}
+.ecosystem-branches>div{min-height:90px;padding:12px}
+.ecosystem-branches b{margin-top:9px;font-size:10px}
+.ecosystem-branches small{margin-top:4px;font-size:8px}
+.closing-cta{padding-top:72px;padding-bottom:72px}
+@media(max-width:850px){
+ .problem-grid{gap:10px}
+ .problem-item{padding:17px}
+ .step{padding:15px 12px}
+ .architecture-stack{padding:12px}
+ .architecture-layer{min-height:51px}
+ .standard-item{min-height:61px}
+ .usecase-item{min-height:62px}
+ .ecosystem-map{margin-top:34px;padding:23px 14px 17px}
+ .ecosystem-center{width:185px;padding:15px}
+ .ecosystem-branches{gap:8px;margin-top:28px}
+ .ecosystem-branches>div{min-height:102px;padding:11px}
+ .closing-cta{padding-top:60px;padding-bottom:60px}
+}
+@media(max-width:600px){
+ .problem-item{min-height:0;padding:17px 16px 19px}
+ .problem-grid{margin-top:30px}
+ .steps{margin-top:28px;gap:9px}
+ .step{padding:14px 10px}
+ .step-icon{width:36px;height:36px}
+ .step h3{font-size:12px}
+ .step p{font-size:9px;line-height:1.65}
+ .architecture-layer{min-height:48px;padding:8px 10px}
+ .principle-list{gap:11px}
+ .standard-item{min-height:57px;padding:9px 10px}
+ .standard-mark{width:34px;height:34px}
+ .usecase-grid{margin-top:28px}
+ .usecase-item{min-height:58px}
+ .ecosystem-map{margin-top:28px;padding:20px 12px 15px}
+ .ecosystem-center{width:170px;padding:13px}
+ .ecosystem-branches{margin-top:23px;gap:7px}
+ .ecosystem-branches>div{min-height:94px;padding:10px}
+ .ecosystem-branches b{font-size:9px}
+ .ecosystem-branches small{font-size:7px}
+ .closing-cta{padding-top:52px;padding-bottom:52px}
+}
