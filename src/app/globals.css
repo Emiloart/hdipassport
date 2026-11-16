@@ -654,5 +654,18 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
   }
   .button:not(.hero-primary-cta).button-small{min-height:44px;padding:0 21px}
   .button:not(.hero-primary-cta).button-large{min-height:44px;padding:0 21px}
+  .button:not(.hero-primary-cta),
+  .next-link,
+  .section-link-wrap .text-link,
+  .privacy-copy > .text-link,
+  .closing-actions .text-link,
+  .mega-all{
+    border:1px solid rgba(179,255,210,.78);
+    border-radius:7px;
+    color:#edfff3;
+    background:linear-gradient(155deg,#a7e7bd 0%,#398b5d 24%,#145333 56%,#071b11 100%);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.62),inset 0 -2px 3px rgba(0,0,0,.58),0 5px 16px rgba(0,0,0,.36),0 0 13px rgba(73,203,125,.16);
+    text-shadow:0 1px 2px rgba(0,0,0,.65);
+  }
   .next-link{min-width:0;flex:1 1 145px}
 }
