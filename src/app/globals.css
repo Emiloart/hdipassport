@@ -815,7 +815,7 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
   gap:16px;
   overflow-x:auto;
   overflow-y:hidden;
-  padding:2px calc(100% - (100% - 32px)/3) 8px 2px;
+  padding:2px 68% 8px 2px;
   scroll-snap-type:x mandatory;
   scroll-behavior:smooth;
   scrollbar-width:none;
@@ -939,6 +939,7 @@ html,body{width:100%;max-width:100%;overflow-x:clip}
 }
 @media(max-width:850px){
   .architecture-carousel{margin-top:36px}
+  .architecture-carousel-viewport{padding-right:52%}
   .architecture-slide{
     flex-basis:calc((100% - 16px)/2);
     min-height:238px;
