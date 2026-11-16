@@ -37,3 +37,28 @@
 @media(max-width:600px){
 .hero-artwork{width:min(100%,260px);max-width:260px;margin-top:30px}
 }
+
+
+/* Full-bleed hero: use the supplied dark artwork directly, without overlays or filters. */
+.hero-section{min-height: min(820px, calc(100svh - 78px));display:flex;flex-direction:column;justify-content:flex-end;background:#06130f;color:#fff}
+.hero-background{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-background picture{position:absolute;inset:0;display:block}
+.hero-image{object-fit:cover;object-position:center;filter:none;opacity:1}
+.hero-grid{position:relative;z-index:1;width:100%;min-height:min(820px, calc(100svh - 78px));display:flex;align-items:center;padding:100px 7.2% 110px}
+.hero-copy{max-width:760px}
+.hero-kicker{color:#d0e1da}
+.hero-copy h1,.hero-copy h1 span{color:#fff}
+.hero-lede{color:#e0e9e5}
+.hero-proof{border-top-color:rgba(255,255,255,.28)}
+.hero-proof span{color:#e0e9e5}
+.hero-proof svg{color:#b9e9dc}
+.hero-copy .text-link{color:#d0f0e5}
+.hero-bottom{position:relative;z-index:1;width:100%;border-top-color:rgba(255,255,255,.25);color:rgba(255,255,255,.75)}
+@media(max-width:850px){
+  .hero-section{min-height:calc(100svh - 70px)}
+  .hero-grid{min-height:calc(100svh - 70px);padding:70px 7% 100px}
+  .hero-copy{max-width:680px}
+}
+@media(max-width:600px){
+  .hero-grid{padding:58px 7% 95px}
+}
