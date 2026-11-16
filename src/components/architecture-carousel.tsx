@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useRef, useState, type KeyboardEvent } from "react";
 import {
   ArrowLeft,
   ArrowRight,
@@ -79,7 +79,7 @@ export default function ArchitectureCarousel() {
     setActiveIndex(nearestIndex);
   }, []);
 
-  const handleKeyDown = useCallback((event: React.KeyboardEvent<HTMLDivElement>) => {
+  const handleKeyDown = useCallback((event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "ArrowRight") {
       event.preventDefault();
       goTo(activeIndex + 1);
