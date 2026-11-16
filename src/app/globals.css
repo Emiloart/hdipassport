@@ -670,3 +670,14 @@ button.button,
 @media(max-width:600px){
  .text-link,.mega-all{min-height:44px;padding-left:21px;padding-right:21px}
 }
+
+
+/* Header sign-in is an action, not a navigation text link. */
+.sign-in{
+ display:inline-flex;align-items:center;justify-content:center;
+ min-height:42px;padding:0 20px;border:1px solid #b9cbc4;
+ border-radius:999px;background:transparent;color:var(--ink);
+ font-size:12px;font-weight:700;transition:background .2s,border-color .2s,transform .2s;
+}
+.sign-in:hover{transform:translateY(-1px);border-color:var(--teal);background:#edf6f2}
+@media(max-width:850px){.sign-in{min-height:38px;padding:0 16px}}
