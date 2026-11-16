@@ -1074,3 +1074,58 @@ a.next-link svg{display:none}
 .closing-actions > a.text-link {
   border-radius: 999px;
 }
+
+
+/* CTA interaction states: preserve the visual treatment through press, revisit and keyboard focus. */
+.button:not(.hero-primary-cta):not(.architecture-control):visited,
+a.text-link:visited,
+a.footer-vision:visited,
+a.mega-all:visited,
+a.next-link:visited{
+  color:#fff;
+}
+.button:not(.hero-primary-cta):not(.architecture-control):active,
+a.text-link:active,
+a.footer-vision:active,
+a.mega-all:active,
+a.next-link:active{
+  color:#fff;
+  border-color:var(--teal-dark);
+  background:var(--teal-dark);
+  box-shadow:0 4px 12px rgba(12,127,120,.2);
+  transform:translateY(0);
+  -webkit-tap-highlight-color:transparent;
+}
+.button:not(.hero-primary-cta):not(.architecture-control),
+a.text-link,
+a.footer-vision,
+a.mega-all,
+a.next-link{
+  -webkit-tap-highlight-color:transparent;
+}
+.button:not(.hero-primary-cta):not(.architecture-control):focus-visible,
+a.text-link:focus-visible,
+a.footer-vision:focus-visible,
+a.mega-all:focus-visible,
+a.next-link:focus-visible{
+  outline:3px solid rgba(12,127,120,.35);
+  outline-offset:3px;
+}
+@media(max-width:600px){
+  .button:not(.hero-primary-cta):not(.architecture-control):active,
+  a.text-link:active,
+  a.footer-vision:active,
+  a.mega-all:active,
+  a.next-link:active{
+    border-color:rgba(179,255,210,.78);
+    color:#edfff3;
+    background:linear-gradient(155deg,#a7e7bd 0%,#398b5d 24%,#145333 56%,#071b11 100%);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.62),inset 0 -2px 3px rgba(0,0,0,.58),0 3px 10px rgba(0,0,0,.32),0 0 13px rgba(73,203,125,.16);
+    transform:translateY(0);
+  }
+  .button:not(.hero-primary-cta):not(.architecture-control):visited,
+  a.text-link:visited,
+  a.footer-vision:visited,
+  a.mega-all:visited,
+  a.next-link:visited{color:#edfff3}
+}
