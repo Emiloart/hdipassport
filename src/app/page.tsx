@@ -3,12 +3,12 @@ import Link from "next/link";
 import desktopHero from "@/assets/hdipassport_hero.png";
 import portraitHero from "@/assets/hdipassport_portrait_hero.png";
 import ArchitectureCarousel from "@/components/architecture-carousel";
-import { ArrowDownRight,Building2,Fingerprint,Globe2,LockKeyhole,Network,ShieldCheck,UserRound,WalletCards } from "lucide-react";
+import { Building2,Fingerprint,Globe2,LockKeyhole,Network,ShieldCheck,UserRound,WalletCards } from "lucide-react";
 
 const cases=[["Financial services","Customer onboarding and account verification"],["Education","Academic qualifications and enrollment"],["Employment","Professional identity and licenses"],["Travel","Identity checks across services and borders"],["Healthcare","Relevant identity and eligibility claims"],["Digital services","Age and eligibility with less disclosure"]];
 export default function HomePage(){return <>
 <section className="hero-section"><div className="hero-grid"><div className="hero-copy"><div className="hero-title-block"><h1><span className="hero-heading-primary">Universal identity.</span><span className="hero-heading-secondary">Defined boundaries.</span></h1></div><div className="hero-details"><p className="hero-lede">A portable identity layer for people and institutions. Reusable credentials, purpose-bound verification and control over what gets shared.</p><div className="hero-actions"><Link href="/get-started" className="button button-large hero-primary-cta">Get started</Link></div><div className="hero-proof"><span><ShieldCheck size={16}/>Holder-directed disclosure</span><span><Fingerprint size={16}/>Verifiable identity</span><span><Globe2 size={16}/>Sovereign by design</span></div></div></div>
-<div className="hero-background" aria-hidden="true"><picture><source media="(max-width: 850px)" srcSet={portraitHero.src}/><Image src={desktopHero} alt="" fill priority sizes="100vw" className="hero-image"/></picture></div></div><div className="hero-bottom"><span>IDENTITY, WITHOUT THE REPEATED COLLECTION</span><span>SCROLL TO EXPLORE <ArrowDownRight size={14}/></span></div></section>
+<div className="hero-background" aria-hidden="true"><picture><source media="(max-width: 850px)" srcSet={portraitHero.src}/><Image src={desktopHero} alt="" fill priority sizes="100vw" className="hero-image"/></picture></div></div><div className="hero-bottom"><span>IDENTITY, WITHOUT THE REPEATED COLLECTION</span></div></section>
 
 
 
