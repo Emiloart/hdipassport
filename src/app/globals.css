@@ -622,3 +622,64 @@ html,body{width:100%;max-width:100%;overflow-x:clip}.site-header,.header-inner,.
   }
 }
 
+
+
+/* Architecture overview: editorial grid, not carousel cards. */
+.architecture-overview-list{margin-top:38px}
+.architecture-overview-list .architecture-crosscutting{margin:0 0 22px}
+.architecture-overview-list .architecture-carousel-viewport{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:0 28px;
+  overflow:visible;
+  margin:0;
+  padding:0;
+  scroll-snap-type:none;
+}
+.architecture-overview-list .architecture-slide{
+  display:grid;
+  grid-template-columns:48px minmax(0,1fr);
+  align-content:start;
+  align-items:start;
+  gap:15px;
+  min-height:0;
+  padding:22px 0 25px;
+  border:0;
+  border-top:1px solid #cbdad4;
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  scroll-snap-align:none;
+  transition:none;
+}
+.architecture-overview-list .architecture-slide:hover{border-color:#cbdad4;background:transparent;transform:none}
+.architecture-overview-list .architecture-slide-header{display:block}
+.architecture-overview-list .architecture-slide-icon{
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  border:1px solid #d6e8e1;
+  border-radius:9px;
+  background:#f0f7f3;
+  color:var(--teal);
+}
+.architecture-overview-list .architecture-slide-copy{margin:0}
+.architecture-overview-list .architecture-slide h3{margin:1px 0 7px;font-size:15px;line-height:1.4}
+.architecture-overview-list .architecture-slide-detail{margin:0 0 7px;color:#47635e;font-size:11px;line-height:1.55}
+.architecture-overview-list .architecture-slide-description{margin:0;color:var(--muted);font-size:11px;line-height:1.7}
+@media(max-width:850px){
+  .architecture-overview-list .architecture-carousel-viewport{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}
+  .architecture-overview-list .architecture-slide{grid-template-columns:1fr;gap:13px;padding:20px 0 22px}
+  .architecture-overview-list .architecture-slide-copy{margin:0}
+}
+@media(max-width:600px){
+  .architecture-overview-list{margin-top:32px}
+  .architecture-overview-list .architecture-crosscutting{margin-bottom:17px;font-size:10px}
+  .architecture-overview-list .architecture-carousel-viewport{gap:0 15px}
+  .architecture-overview-list .architecture-slide{padding:17px 0 19px}
+  .architecture-overview-list .architecture-slide-icon{width:42px;height:42px}
+  .architecture-overview-list .architecture-slide h3{font-size:14px;margin-bottom:6px}
+  .architecture-overview-list .architecture-slide-detail{font-size:10px}
+  .architecture-overview-list .architecture-slide-description{font-size:10px;line-height:1.65}
+}
