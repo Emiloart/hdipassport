@@ -827,3 +827,26 @@ body:has(.hero-section) .site-header.is-scrolled .nav-menu[open]>summary{color:v
     height:36px;
   }
 }
+
+/* Homepage: keep the header entirely transparent; reserve clear space for the hero title below it. */
+body:has(.hero-section) .site-header,
+body:has(.hero-section) .site-header.is-scrolled{
+  background:transparent;
+  border-color:transparent;
+  box-shadow:none;
+  backdrop-filter:none;
+  -webkit-backdrop-filter:none;
+}
+body:has(.hero-section) .site-header::before,
+body:has(.hero-section) .site-header.is-scrolled::before{
+  display:none;
+  content:none;
+}
+body:has(.hero-section) .site-header.is-scrolled .brand-mark img{filter:brightness(0) invert(1)}
+body:has(.hero-section) .site-header.is-scrolled .brand-word{color:#f5faf8;text-shadow:0 1px 8px rgba(0,0,0,.38)}
+@media(max-width:850px){
+  body:has(.hero-section) .hero-grid{padding-top:88px}
+}
+@media(max-width:380px){
+  body:has(.hero-section) .hero-grid{padding-top:84px}
+}
