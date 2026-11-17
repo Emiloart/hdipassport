@@ -767,3 +767,14 @@ html,body{width:100%;max-width:100%;overflow-x:clip}.site-header,.header-inner,.
   }
   .hero-copy h1 .hero-heading-secondary{margin-left:.22em}
 }
+
+
+/* Fine positioning and scale adjustment for the desktop hero headline. */
+@media(min-width:851px){
+  .hero-grid{
+    padding-top:clamp(56px,7vw,104px);
+  }
+  .hero-copy h1{
+    font-size:clamp(38px,4.3vw,62px);
+  }
+}
