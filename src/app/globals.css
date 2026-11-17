@@ -572,26 +572,14 @@ html,body{width:100%;max-width:100%;overflow-x:clip}.site-header,.header-inner,.
   align-items:center;
   flex-wrap:wrap;
   gap:10px;
-}.closing-cta .closing-actions .button:not(.hero-primary-cta):not(.architecture-control),.closing-cta .closing-actions a.text-link{
-  min-height:38px;
-  padding:0 15px;
-  border-radius:999px;
-  font-size:11px;
-  line-height:1;
-}
-@media(max-width:850px){.closing-cta{padding:42px 7%;gap:20px}.closing-cta h2{font-size:34px}
+}@media(max-width:850px){.closing-cta{padding:42px 7%;gap:20px}.closing-cta h2{font-size:34px}
 }
 @media(max-width:600px){.closing-cta{
     align-items:flex-start;
     flex-direction:column;
     padding:36px 7%;
     gap:17px;
-  }.closing-cta h2{font-size:29px;line-height:1.15}.closing-cta p{font-size:11px;line-height:1.65}.closing-actions{gap:8px}.closing-cta .closing-actions .button:not(.hero-primary-cta):not(.architecture-control),.closing-cta .closing-actions a.text-link{
-    min-height:35px;
-    padding:0 13px;
-    font-size:10px;
-  }
-}
+  }.closing-cta h2{font-size:29px;line-height:1.15}.closing-cta p{font-size:11px;line-height:1.65}.closing-actions{gap:8px}}
 
 
 
