@@ -9,8 +9,8 @@ export function SiteFooter(){
       <div className="footer-top">
         <div className="footer-brand">
           <Link href="/" className="brand brand-footer" aria-label="HDIP home">
-            <span className="brand-mark"><Image src="/hdip-mark.svg" alt="" width={44} height={34}/></span>
-            <span className="brand-word">HDIP<span className="brand-period">.</span></span>
+            <span className="brand-mark"><Image src="/hdip-mark-white.svg" alt="" width={44} height={34}/></span>
+            <span className="brand-word">HDIP</span>
           </Link>
           <p>Identity infrastructure built around the person.</p>
           <Link href="/resources/vision" className="footer-vision">The thinking behind HDIP</Link>
@@ -27,7 +27,7 @@ export function SiteFooter(){
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© {new Date().getFullYear()} HDIP.</span>
+        <span>© {new Date().getFullYear()} HDIP</span>
       </div>
     </footer>
   );
