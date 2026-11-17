@@ -683,3 +683,63 @@ html,body{width:100%;max-width:100%;overflow-x:clip}.site-header,.header-inner,.
   .architecture-overview-list .architecture-slide-detail{font-size:10px}
   .architecture-overview-list .architecture-slide-description{font-size:10px;line-height:1.65}
 }
+
+
+/* Desktop hero composition: 4:3 artwork, top-led headline, mobile CTA treatment. */
+@media(min-width:851px){
+  .hero-grid{
+    width:100%;
+    max-width:none;
+    min-height:0;
+    aspect-ratio:4 / 3;
+    grid-template-columns:minmax(0,1fr);
+    align-items:stretch;
+    padding:clamp(76px,9vw,138px) 7.2% 5.5%;
+  }
+  .hero-copy{
+    width:min(62%,760px);
+    max-width:760px;
+    min-height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:34px;
+  }
+  .hero-title-block{position:relative;z-index:2}
+  .hero-kicker{display:none}
+  .hero-copy h1{
+    max-width:720px;
+    margin:0;
+    font-size:clamp(58px,6.2vw,88px);
+    line-height:.99;
+    letter-spacing:-.055em;
+  }
+  .hero-details{position:relative;z-index:2;max-width:570px;margin-top:auto}
+  .hero-lede{color:#f0f5f2;text-shadow:0 2px 12px rgba(0,0,0,.72)}
+  .hero-actions{margin-top:25px}
+  .hero-actions .hero-primary-cta{
+    min-height:50px;
+    padding:0 25px;
+    border:1px solid rgba(179,255,210,.78);
+    border-radius:999px;
+    color:#edfff3;
+    font-size:13px;
+    font-weight:750;
+    letter-spacing:.015em;
+    background:linear-gradient(155deg,#a7e7bd 0%,#398b5d 24%,#145333 56%,#071b11 100%);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.62),inset 0 -2px 3px rgba(0,0,0,.58),0 5px 16px rgba(0,0,0,.36),0 0 13px rgba(73,203,125,.16);
+    text-shadow:0 1px 2px rgba(0,0,0,.65);
+  }
+  .hero-actions .hero-primary-cta:hover,
+  .hero-actions .hero-primary-cta:active{
+    transform:translateY(-1px);
+    border-color:rgba(179,255,210,.9);
+    color:#edfff3;
+    background:linear-gradient(155deg,#a7e7bd 0%,#398b5d 24%,#145333 56%,#071b11 100%);
+    box-shadow:inset 0 1px 1px rgba(255,255,255,.62),inset 0 -2px 3px rgba(0,0,0,.58),0 5px 16px rgba(0,0,0,.36),0 0 13px rgba(73,203,125,.16);
+  }
+  .hero-actions .hero-primary-cta:focus-visible{
+    outline:3px solid rgba(179,255,210,.65);
+    outline-offset:4px;
+  }
+}
