@@ -42,10 +42,6 @@ const layers = [
 export default function ArchitectureCarousel() {
   return (
     <div className="architecture-carousel architecture-overview-list">
-      <p className="architecture-crosscutting">
-        <span className="architecture-crosscutting-mark" aria-hidden="true" />
-        Privacy, security and governance operate across every layer.
-      </p>
       <div className="architecture-carousel-viewport" role="list" aria-label="HDIP architecture layers">
         {layers.map(({ title, detail, description, Icon }) => (
           <article className="architecture-slide" key={title} role="listitem">
